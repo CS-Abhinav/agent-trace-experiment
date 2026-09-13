@@ -1,0 +1,3 @@
+Events on the last day of the week aren't showing up in the "This week" filter
+on the homepage. The Robotics Club Social on Sunday 20 September is missing from
+the list even though it's in the events data. Please fix it.

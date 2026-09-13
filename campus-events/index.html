@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Campus Events</title>
+<h1>Campus Events</h1>
+<div id="board"></div>
+<script type="module">
+  import { events } from "./src/data/events.js";
+  import { renderEventBoard } from "./src/components/EventBoard.js";
+  const today = new Date().toISOString().slice(0, 10);
+  document.getElementById("board").innerHTML = renderEventBoard(events, today);
+</script>

@@ -1,0 +1,9 @@
+{
+  "name": "campus-events",
+  "version": "1.0.0",
+  "description": "Campus events board with weekly and monthly filters",
+  "type": "module",
+  "scripts": {
+    "test": "node test/filters.test.js"
+  }
+}
