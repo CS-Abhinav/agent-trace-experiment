@@ -87,7 +87,19 @@ They are all JSON and they all disagree about the details — what a tool call i
 named, where its arguments live, whether reasoning is recorded at all. Reading
 three of them side by side is the point of the exercise.
 
-## Note
+## A worked example
 
-The three transcripts are not included here. Run your own — the interesting part
-is the comparison, and results will differ.
+[`traces/cursor-session.jsonl`](traces/cursor-session.jsonl) is one real
+transcript from this experiment — the Cursor run, 9 records, about 4 KB. Open it
+in a text editor.
+
+It is worth reading because of what *isn't* in it. Fifteen `tool_use` blocks,
+and not a single `tool_result`: Cursor records every question it asked and none
+of the answers it got back. No reasoning blocks either. What it chose to say
+out loud, in its replies, is all you get.
+
+Absolute paths have been rewritten from a home directory to `/work/campus-events`.
+Nothing else is changed.
+
+The other two transcripts are not included. Run your own — the comparison is the
+interesting part, and your results will differ.
