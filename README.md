@@ -1,5 +1,12 @@
 # One bug, three agents
 
+> **Two experiments live here.**
+> - **The first one (below)** needs the bug still in place. On `main` it has since been
+>   fixed (Copilot's fix: the filters pass the next day as the end date), so check out the
+>   original first: `git checkout article-1`.
+> - **The follow-up**, the same helper wrapped as an MCP tool and handed to three agents,
+>   is in [`mcp-experiment/`](mcp-experiment/).
+
 A tiny, reproducible experiment: plant one bug, hand the identical report to
 several coding agents, and compare what they actually did — not just what they
 produced.
