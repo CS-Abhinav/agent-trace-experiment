@@ -1,0 +1,42 @@
+[2026-09-24T17:08:26.076+00:00] run-A-claude-1: 2.1.220 (Claude Code) in /private/tmp/mcp-exp/run-A-claude-1
+[2026-09-24T17:08:32.346+00:00] run-A-claude-1: exit 0
+[2026-09-24T17:08:32.754+00:00] run-A-copilot-1: GitHub Copilot CLI 1.0.83.
+Run 'copilot update' to check for updates. in /private/tmp/mcp-exp/run-A-copilot-1
+[2026-09-24T17:08:43.460+00:00] run-A-copilot-1: exit 0
+[2026-09-24T17:08:43.756+00:00] run-A-cursor-1: 2026.09.10-fd3934a in /private/tmp/mcp-exp/run-A-cursor-1
+[2026-09-24T17:08:56.151+00:00] run-A-cursor-1: exit 0
+[2026-09-24T17:08:56.454+00:00] run-A-claude-2: 2.1.220 (Claude Code) in /private/tmp/mcp-exp/run-A-claude-2
+[2026-09-24T17:09:02.086+00:00] run-A-claude-2: exit 0
+[2026-09-24T17:09:02.486+00:00] run-A-copilot-2: GitHub Copilot CLI 1.0.83.
+Run 'copilot update' to check for updates. in /private/tmp/mcp-exp/run-A-copilot-2
+[2026-09-24T17:09:12.130+00:00] run-A-copilot-2: exit 0
+[2026-09-24T17:09:12.408+00:00] run-A-cursor-2: 2026.09.10-fd3934a in /private/tmp/mcp-exp/run-A-cursor-2
+[2026-09-24T17:09:25.145+00:00] run-A-cursor-2: exit 0
+[2026-09-24T17:09:25.471+00:00] run-A-claude-3: 2.1.220 (Claude Code) in /private/tmp/mcp-exp/run-A-claude-3
+[2026-09-24T17:09:32.011+00:00] run-A-claude-3: exit 0
+[2026-09-24T17:09:32.472+00:00] run-A-copilot-3: GitHub Copilot CLI 1.0.83.
+Run 'copilot update' to check for updates. in /private/tmp/mcp-exp/run-A-copilot-3
+[2026-09-24T17:09:42.656+00:00] run-A-copilot-3: exit 0
+[2026-09-24T17:09:42.942+00:00] run-A-cursor-3: 2026.09.10-fd3934a in /private/tmp/mcp-exp/run-A-cursor-3
+[2026-09-24T17:09:56.995+00:00] run-A-cursor-3: exit 0
+[2026-09-24T17:09:57.295+00:00] run-B-claude-1: 2.1.220 (Claude Code) in /private/tmp/mcp-exp/run-B-claude-1
+[2026-09-24T17:10:04.312+00:00] run-B-claude-1: exit 0
+[2026-09-24T17:10:04.724+00:00] run-B-copilot-1: GitHub Copilot CLI 1.0.83.
+Run 'copilot update' to check for updates. in /private/tmp/mcp-exp/run-B-copilot-1
+[2026-09-24T17:10:15.133+00:00] run-B-copilot-1: exit 0
+[2026-09-24T17:10:15.420+00:00] run-B-cursor-1: 2026.09.10-fd3934a in /private/tmp/mcp-exp/run-B-cursor-1
+[2026-09-24T17:10:29.770+00:00] run-B-cursor-1: exit 0
+[2026-09-24T17:10:30.107+00:00] run-B-claude-2: 2.1.220 (Claude Code) in /private/tmp/mcp-exp/run-B-claude-2
+[2026-09-24T17:10:35.963+00:00] run-B-claude-2: exit 0
+[2026-09-24T17:10:36.381+00:00] run-B-copilot-2: GitHub Copilot CLI 1.0.83.
+Run 'copilot update' to check for updates. in /private/tmp/mcp-exp/run-B-copilot-2
+[2026-09-24T17:10:49.018+00:00] run-B-copilot-2: exit 0
+[2026-09-24T17:10:49.290+00:00] run-B-cursor-2: 2026.09.10-fd3934a in /private/tmp/mcp-exp/run-B-cursor-2
+[2026-09-24T17:11:02.672+00:00] run-B-cursor-2: exit 0
+[2026-09-24T17:11:02.964+00:00] run-B-claude-3: 2.1.220 (Claude Code) in /private/tmp/mcp-exp/run-B-claude-3
+[2026-09-24T17:11:12.677+00:00] run-B-claude-3: exit 0
+[2026-09-24T17:11:13.084+00:00] run-B-copilot-3: GitHub Copilot CLI 1.0.83.
+Run 'copilot update' to check for updates. in /private/tmp/mcp-exp/run-B-copilot-3
+[2026-09-24T17:11:24.318+00:00] run-B-copilot-3: exit 0
+[2026-09-24T17:11:24.587+00:00] run-B-cursor-3: 2026.09.10-fd3934a in /private/tmp/mcp-exp/run-B-cursor-3
+[2026-09-24T17:11:46.414+00:00] run-B-cursor-3: exit 0

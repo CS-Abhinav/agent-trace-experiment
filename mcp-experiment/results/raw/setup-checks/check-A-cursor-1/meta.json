@@ -1,0 +1,30 @@
+{
+  "label": "check-A-cursor-1",
+  "agent": "cursor",
+  "round": "A",
+  "repeat": 1,
+  "setup_check": true,
+  "cli_version": "2026.09.10-fd3934a",
+  "workspace": "/private/tmp/mcp-exp/check-A-cursor-1",
+  "requested_session_id": null,
+  "prompt": "List the names of the tools you have available. Do not call any tools.",
+  "argv": [
+    "cursor-agent",
+    "-p",
+    "List the names of the tools you have available. Do not call any tools.",
+    "--output-format",
+    "stream-json",
+    "--approve-mcps",
+    "--trust",
+    "--workspace",
+    "/private/tmp/mcp-exp/check-A-cursor-1"
+  ],
+  "started": "2026-09-24T17:03:43.646+00:00",
+  "exit_code": 0,
+  "finished": "2026-09-24T17:03:52.798+00:00",
+  "workspace_after": [
+    ".cursor",
+    ".cursor/cli.json",
+    ".cursor/mcp.json"
+  ]
+}

@@ -1,0 +1,3 @@
+{"ts":"2026-09-30T15:33:13.509Z","run":"my-laptop-test","description":"A","event":"server_start","pid":25348}
+{"ts":"2026-09-30T15:33:13.515Z","run":"my-laptop-test","description":"A","event":"call","args":{"start":"2026-09-14","end":"2026-09-20"},"count":2,"returned":["Robotics Club Build Night","Debate Society Open Floor"]}
+{"ts":"2026-09-30T15:33:13.515Z","run":"my-laptop-test","description":"A","event":"call","args":{"start":"2026-09-14","end":"2026-09-21"},"count":3,"returned":["Robotics Club Build Night","Debate Society Open Floor","Robotics Club Social"]}

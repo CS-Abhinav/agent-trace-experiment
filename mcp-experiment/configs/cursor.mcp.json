@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "campus-events": {
+      "command": "node",
+      "args": ["/ABS/PATH/mcp-experiment/server.mjs"],
+      "env": { "EVENTS_TOOL_DESCRIPTION": "A", "MCP_RUN_LABEL": "cursor-try" }
+    }
+  }
+}

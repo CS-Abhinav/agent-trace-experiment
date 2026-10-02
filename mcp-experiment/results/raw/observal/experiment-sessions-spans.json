@@ -1,0 +1,2721 @@
+{
+ "note": "Filtered from `observal ops traces -d 2 -n 200 --span -o json` to the 18 experiment sessions only; all other sessions removed.",
+ "items": [
+  {
+   "summary": {
+    "session_id": "88ee6eb0-d333-4895-8be4-f59c7ca23318",
+    "first_event_time": "2026-09-24 17:17:53.575",
+    "last_event_time": "2026-09-24 17:17:53.576",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 0,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Cursor",
+    "service_name": "cursor",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "88ee6eb0-d333-4895-8be4-f59c7ca23318",
+    "service_name": "cursor",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:17:53.575",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.575",
+      "event_name": "hook_assistant_response",
+      "body": "I'll look up the campus events tools and fetch everything in that date range.",
+      "attributes": {
+       "tool_response": "I'll look up the campus events tools and fetch everything in that date range."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.575",
+      "event_name": "hook_posttooluse",
+      "body": "GetDynamicTools",
+      "attributes": {
+       "tool_name": "GetDynamicTools",
+       "tool_input": "{\"namespace\": \"campus-events\"}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.576",
+      "event_name": "hook_posttooluse",
+      "body": "CallDynamicTool",
+      "attributes": {
+       "tool_name": "CallDynamicTool",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\", \"mcpDetails\": {\"description\": \"Fetch campus events for 14\\u201320 September 2026\"}, \"arguments\": {\"start\": \"2026-09-14\", \"end\": \"2026-09-20\"}}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.576",
+      "event_name": "hook_assistant_response",
+      "body": "There are **2** events between Monday 14 September and Sunday 20 September 2026:\n\n1. **Robotics Club",
+      "attributes": {
+       "tool_response": "There are **2** events between Monday 14 September and Sunday 20 September 2026:\n\n1. **Robotics Club Build Night** \u2014 Wednesday 16 September 2026 \u2014 Lab 2  \n2. **Debate Society Open Floor** \u2014 Friday 18 September 2026 \u2014 Hall A"
+      },
+      "service_name": "cursor"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 3
+   }
+  },
+  {
+   "summary": {
+    "session_id": "da0d39b6-7516-4ab9-a48f-f4963f894fc5",
+    "first_event_time": "2026-09-24 17:17:53.413",
+    "last_event_time": "2026-09-24 17:17:53.413",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 0,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Cursor",
+    "service_name": "cursor",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "da0d39b6-7516-4ab9-a48f-f4963f894fc5",
+    "service_name": "cursor",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:17:53.413",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.413",
+      "event_name": "hook_assistant_response",
+      "body": "I'll look up campus events for that week using the events tool.",
+      "attributes": {
+       "tool_response": "I'll look up campus events for that week using the events tool."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.413",
+      "event_name": "hook_posttooluse",
+      "body": "GetDynamicTools",
+      "attributes": {
+       "tool_name": "GetDynamicTools",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\"}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.413",
+      "event_name": "hook_posttooluse",
+      "body": "CallDynamicTool",
+      "attributes": {
+       "tool_name": "CallDynamicTool",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\", \"mcpDetails\": {\"description\": \"Fetch campus events from Sep 14 to Sep 20, 2026\"}, \"arguments\": {\"start\": \"2026-09-14\", \"end\": \"2026-09-20\"}}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.413",
+      "event_name": "hook_assistant_response",
+      "body": "Between **Monday 14 September** and **Sunday 20 September 2026**, there are **2** events:\n\n1. **Robo",
+      "attributes": {
+       "tool_response": "Between **Monday 14 September** and **Sunday 20 September 2026**, there are **2** events:\n\n1. **Robotics Club Build Night** \u2014 Wednesday 16 September 2026, Lab 2  \n2. **Debate Society Open Floor** \u2014 Friday 18 September 2026, Hall A"
+      },
+      "service_name": "cursor"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 3
+   }
+  },
+  {
+   "summary": {
+    "session_id": "0382a1e0-3631-4995-a8bc-f95b4a6266e3",
+    "first_event_time": "2026-09-24 17:17:53.254",
+    "last_event_time": "2026-09-24 17:17:53.255",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 0,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Cursor",
+    "service_name": "cursor",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "0382a1e0-3631-4995-a8bc-f95b4a6266e3",
+    "service_name": "cursor",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:17:53.254",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.254",
+      "event_name": "hook_assistant_response",
+      "body": "I'll look up the campus events tools and fetch everything in that date range.",
+      "attributes": {
+       "tool_response": "I'll look up the campus events tools and fetch everything in that date range."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.254",
+      "event_name": "hook_posttooluse",
+      "body": "GetDynamicTools",
+      "attributes": {
+       "tool_name": "GetDynamicTools",
+       "tool_input": "{\"namespace\": \"campus-events\"}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.255",
+      "event_name": "hook_posttooluse",
+      "body": "CallDynamicTool",
+      "attributes": {
+       "tool_name": "CallDynamicTool",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\", \"mcpDetails\": {\"description\": \"Fetch campus events from 14\\u201320 Sep 2026\"}, \"arguments\": {\"start\": \"2026-09-14\", \"end\": \"2026-09-20\"}}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.255",
+      "event_name": "hook_assistant_response",
+      "body": "Between **Monday 14 September** and **Sunday 20 September 2026**, there are **2** events:\n\n1. **Robo",
+      "attributes": {
+       "tool_response": "Between **Monday 14 September** and **Sunday 20 September 2026**, there are **2** events:\n\n1. **Robotics Club Build Night** \u2014 Wednesday 16 September 2026 \u2014 Lab 2  \n2. **Debate Society Open Floor** \u2014 Friday 18 September 2026 \u2014 Hall A"
+      },
+      "service_name": "cursor"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 3
+   }
+  },
+  {
+   "summary": {
+    "session_id": "c2e53f8a-6960-46c6-aa75-11d2a3a6d364",
+    "first_event_time": "2026-09-24 17:17:53.095",
+    "last_event_time": "2026-09-24 17:17:53.095",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 0,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Cursor",
+    "service_name": "cursor",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "c2e53f8a-6960-46c6-aa75-11d2a3a6d364",
+    "service_name": "cursor",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:17:53.095",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.095",
+      "event_name": "hook_assistant_response",
+      "body": "I'll look up campus events for that week via the events tool.",
+      "attributes": {
+       "tool_response": "I'll look up campus events for that week via the events tool."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.095",
+      "event_name": "hook_posttooluse",
+      "body": "GetDynamicTools",
+      "attributes": {
+       "tool_name": "GetDynamicTools",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\"}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.095",
+      "event_name": "hook_posttooluse",
+      "body": "CallDynamicTool",
+      "attributes": {
+       "tool_name": "CallDynamicTool",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\", \"mcpDetails\": {\"description\": \"Fetch campus events for Sep 14\\u201320 2026\"}, \"arguments\": {\"start\": \"2026-09-14\", \"end\": \"2026-09-21\"}}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:53.095",
+      "event_name": "hook_assistant_response",
+      "body": "Events between **Monday 14 September** and **Sunday 20 September 2026**:\n\n1. **Robotics Club Build N",
+      "attributes": {
+       "tool_response": "Events between **Monday 14 September** and **Sunday 20 September 2026**:\n\n1. **Robotics Club Build Night** \u2014 Wed 16 Sep 2026, Lab 2  \n2. **Debate Society Open Floor** \u2014 Fri 18 Sep 2026, Hall A  \n3. **Robotics Club Social** \u2014 Sun 20 Sep 2026, Quad"
+      },
+      "service_name": "cursor"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 3
+   }
+  },
+  {
+   "summary": {
+    "session_id": "d3967083-2ed9-4429-a4d1-96d81c58aaf7",
+    "first_event_time": "2026-09-24 17:17:52.938",
+    "last_event_time": "2026-09-24 17:17:52.939",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 0,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Cursor",
+    "service_name": "cursor",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "d3967083-2ed9-4429-a4d1-96d81c58aaf7",
+    "service_name": "cursor",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:17:52.938",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.938",
+      "event_name": "hook_assistant_response",
+      "body": "I'll check the campus events tools and fetch everything in that date range.",
+      "attributes": {
+       "tool_response": "I'll check the campus events tools and fetch everything in that date range."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.938",
+      "event_name": "hook_posttooluse",
+      "body": "GetDynamicTools",
+      "attributes": {
+       "tool_name": "GetDynamicTools",
+       "tool_input": "{\"namespace\": \"campus-events\"}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.938",
+      "event_name": "hook_posttooluse",
+      "body": "CallDynamicTool",
+      "attributes": {
+       "tool_name": "CallDynamicTool",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\", \"mcpDetails\": {\"description\": \"Fetch campus events for 14\\u201320 September 2026\"}, \"arguments\": {\"start\": \"2026-09-14\", \"end\": \"2026-09-21\"}}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.939",
+      "event_name": "hook_assistant_response",
+      "body": "Events between **Monday 14 September** and **Sunday 20 September 2026**:\n\n1. **Robotics Club Build N",
+      "attributes": {
+       "tool_response": "Events between **Monday 14 September** and **Sunday 20 September 2026**:\n\n1. **Robotics Club Build Night** \u2014 16 September 2026 \u2014 Lab 2  \n2. **Debate Society Open Floor** \u2014 18 September 2026 \u2014 Hall A  \n3. **Robotics Club Social** \u2014 20 September 2026 \u2014 Quad"
+      },
+      "service_name": "cursor"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 3
+   }
+  },
+  {
+   "summary": {
+    "session_id": "807a6212-e612-4896-96a9-e331fe069de3",
+    "first_event_time": "2026-09-24 17:17:52.783",
+    "last_event_time": "2026-09-24 17:17:52.784",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 0,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Cursor",
+    "service_name": "cursor",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "807a6212-e612-4896-96a9-e331fe069de3",
+    "service_name": "cursor",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:17:52.783",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.784",
+      "event_name": "hook_assistant_response",
+      "body": "I'll look up the campus-events tools and fetch everything in that date range.",
+      "attributes": {
+       "tool_response": "I'll look up the campus-events tools and fetch everything in that date range."
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.784",
+      "event_name": "hook_posttooluse",
+      "body": "GetDynamicTools",
+      "attributes": {
+       "tool_name": "GetDynamicTools",
+       "tool_input": "{\"namespace\": \"campus-events\"}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.784",
+      "event_name": "hook_posttooluse",
+      "body": "CallDynamicTool",
+      "attributes": {
+       "tool_name": "CallDynamicTool",
+       "tool_input": "{\"namespace\": \"campus-events\", \"toolName\": \"get_events_in_range\", \"mcpDetails\": {\"description\": \"Fetch campus events from Sep 14 through Sep 20 2026\"}, \"arguments\": {\"start\": \"2026-09-14\", \"end\": \"2026-09-21\"}}",
+       "tool_use_id": ""
+      },
+      "service_name": "cursor"
+     },
+     {
+      "timestamp": "2026-09-24 17:17:52.784",
+      "event_name": "hook_assistant_response",
+      "body": "Events between Monday 14 September and Sunday 20 September 2026:\n\n1. **Robotics Club Build Night** \u2014",
+      "attributes": {
+       "tool_response": "Events between Monday 14 September and Sunday 20 September 2026:\n\n1. **Robotics Club Build Night** \u2014 Wednesday 16 September 2026, Lab 2  \n2. **Debate Society Open Floor** \u2014 Friday 18 September 2026, Hall A  \n3. **Robotics Club Social** \u2014 Sunday 20 September 2026, Quad  \n\nThat\u2019s all three events in that range."
+      },
+      "service_name": "cursor"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 3
+   }
+  },
+  {
+   "summary": {
+    "session_id": "f5f931e6-2ac6-49b7-8860-0f9f6e0b6808",
+    "first_event_time": "2026-09-24 17:17:51.276",
+    "last_event_time": "2026-09-24 17:17:51.756",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Copilot CLI",
+    "service_name": "copilot-cli",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "f5f931e6-2ac6-49b7-8860-0f9f6e0b6808",
+    "service_name": "copilot-cli",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:11:14.996",
+      "event_name": "hook_sessionstart",
+      "body": "session start (cwd: /private/tmp/mcp-exp/run-B-copilot-3)",
+      "attributes": {
+       "session_id": "f5f931e6-2ac6-49b7-8860-0f9f6e0b6808",
+       "cwd": "/private/tmp/mcp-exp/run-B-copilot-3"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.354",
+      "event_name": "copilot_cli_session_model_change",
+      "body": "session.model_change",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.751",
+      "event_name": "copilot_cli_session_auto_mode_resolved",
+      "body": "session.auto_mode_resolved",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.763",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.854",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.855",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.855",
+      "event_name": "copilot_cli_system_message",
+      "body": "system.message",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.856",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.924",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:16.928",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:19.758",
+      "event_name": "hook_assistant_response",
+      "body": "",
+      "attributes": {
+       "tool_response": "",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:19.759",
+      "event_name": "copilot_cli_tool_execution_start",
+      "body": "tool.execution_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:19.760",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:19.902",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:19.906",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:20.032",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:20.032",
+      "event_name": "hook_toolresult",
+      "body": "tool_result",
+      "attributes": {
+       "tool_name": "",
+       "tool_response": "{\"content\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"},{\\\"id\\\":3,\\\"title\\\":\\\"Robotics Club Social\\\",\\\"date\\\":\\\"2026-09-20\\\",\\\"venue\\\":\\\"Quad\\\"}]\", \"detailedContent\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"},{\\\"id\\\":3,\\\"title\\\":\\\"Robotics Club Social\\\",\\\"date\\\":\\\"2026-09-20\\\",\\\"venue\\\":\\\"Quad\\\"}]\"}",
+       "tool_use_id": "f0f9b661-7029-47fa-a191-10db0c3e327d"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:20.033",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:20.033",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:22.099",
+      "event_name": "hook_assistant_response",
+      "body": "Events happening between **Monday, 14 September and Sunday, 20 September 2026**:\n\n- **Wednesday, 16 ",
+      "attributes": {
+       "tool_response": "Events happening between **Monday, 14 September and Sunday, 20 September 2026**:\n\n- **Wednesday, 16 September** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September** \u2014 Debate Society Open Floor, Hall A\n- **Sunday, 20 September** \u2014 Robotics Club Social, Quad",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:22.100",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:22.101",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:22.249",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:22.249",
+      "event_name": "copilot_cli_session_usage_checkpoint",
+      "body": "session.usage_checkpoint",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:22.254",
+      "event_name": "copilot_cli_session_shutdown",
+      "body": "session.shutdown",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 24
+   }
+  },
+  {
+   "summary": {
+    "session_id": "6ee36066-4f43-43d4-8373-b48a74143c7c",
+    "first_event_time": "2026-09-24 17:17:50.300",
+    "last_event_time": "2026-09-24 17:17:50.798",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Copilot CLI",
+    "service_name": "copilot-cli",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "6ee36066-4f43-43d4-8373-b48a74143c7c",
+    "service_name": "copilot-cli",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:10:38.138",
+      "event_name": "hook_sessionstart",
+      "body": "session start (cwd: /private/tmp/mcp-exp/run-B-copilot-2)",
+      "attributes": {
+       "session_id": "6ee36066-4f43-43d4-8373-b48a74143c7c",
+       "cwd": "/private/tmp/mcp-exp/run-B-copilot-2"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.510",
+      "event_name": "copilot_cli_session_model_change",
+      "body": "session.model_change",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.874",
+      "event_name": "copilot_cli_session_auto_mode_resolved",
+      "body": "session.auto_mode_resolved",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.884",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.967",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.967",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.968",
+      "event_name": "copilot_cli_system_message",
+      "body": "system.message",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:39.968",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:40.042",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:40.043",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:43.909",
+      "event_name": "hook_assistant_response",
+      "body": "",
+      "attributes": {
+       "tool_response": "",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:43.911",
+      "event_name": "copilot_cli_tool_execution_start",
+      "body": "tool.execution_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:43.912",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:44.066",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:44.071",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:44.214",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:44.214",
+      "event_name": "hook_toolresult",
+      "body": "tool_result",
+      "attributes": {
+       "tool_name": "",
+       "tool_response": "{\"content\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"},{\\\"id\\\":3,\\\"title\\\":\\\"Robotics Club Social\\\",\\\"date\\\":\\\"2026-09-20\\\",\\\"venue\\\":\\\"Quad\\\"}]\", \"detailedContent\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"},{\\\"id\\\":3,\\\"title\\\":\\\"Robotics Club Social\\\",\\\"date\\\":\\\"2026-09-20\\\",\\\"venue\\\":\\\"Quad\\\"}]\"}",
+       "tool_use_id": "e872d170-16c5-4bdf-8f5d-c28106296b20"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:44.215",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:44.215",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:47.055",
+      "event_name": "hook_assistant_response",
+      "body": "- **Wednesday, 16 September 2026:** Robotics Club Build Night \u2014 Lab 2\n- **Friday, 18 September 2026:",
+      "attributes": {
+       "tool_response": "- **Wednesday, 16 September 2026:** Robotics Club Build Night \u2014 Lab 2\n- **Friday, 18 September 2026:** Debate Society Open Floor \u2014 Hall A\n- **Sunday, 20 September 2026:** Robotics Club Social \u2014 Quad",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:47.056",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:47.056",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:47.209",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:47.210",
+      "event_name": "copilot_cli_session_usage_checkpoint",
+      "body": "session.usage_checkpoint",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:47.215",
+      "event_name": "copilot_cli_session_shutdown",
+      "body": "session.shutdown",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 24
+   }
+  },
+  {
+   "summary": {
+    "session_id": "e31f7d0b-f055-4e19-a4d5-e3893897d562",
+    "first_event_time": "2026-09-24 17:17:49.343",
+    "last_event_time": "2026-09-24 17:17:49.825",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Copilot CLI",
+    "service_name": "copilot-cli",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "e31f7d0b-f055-4e19-a4d5-e3893897d562",
+    "service_name": "copilot-cli",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:10:06.421",
+      "event_name": "hook_sessionstart",
+      "body": "session start (cwd: /private/tmp/mcp-exp/run-B-copilot-1)",
+      "attributes": {
+       "session_id": "e31f7d0b-f055-4e19-a4d5-e3893897d562",
+       "cwd": "/private/tmp/mcp-exp/run-B-copilot-1"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:07.755",
+      "event_name": "copilot_cli_session_model_change",
+      "body": "session.model_change",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.120",
+      "event_name": "copilot_cli_session_auto_mode_resolved",
+      "body": "session.auto_mode_resolved",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.131",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.217",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.217",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.218",
+      "event_name": "copilot_cli_system_message",
+      "body": "system.message",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.218",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.285",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:08.289",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.438",
+      "event_name": "hook_assistant_response",
+      "body": "",
+      "attributes": {
+       "tool_response": "",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.439",
+      "event_name": "copilot_cli_tool_execution_start",
+      "body": "tool.execution_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.440",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.591",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.596",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.725",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.725",
+      "event_name": "hook_toolresult",
+      "body": "tool_result",
+      "attributes": {
+       "tool_name": "",
+       "tool_response": "{\"content\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"},{\\\"id\\\":3,\\\"title\\\":\\\"Robotics Club Social\\\",\\\"date\\\":\\\"2026-09-20\\\",\\\"venue\\\":\\\"Quad\\\"}]\", \"detailedContent\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"},{\\\"id\\\":3,\\\"title\\\":\\\"Robotics Club Social\\\",\\\"date\\\":\\\"2026-09-20\\\",\\\"venue\\\":\\\"Quad\\\"}]\"}",
+       "tool_use_id": "163ff5ea-a32c-4bc6-aa41-3073faed727d"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.726",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:11.726",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:13.168",
+      "event_name": "hook_assistant_response",
+      "body": "Events happening between **Monday 14 September and Sunday 20 September 2026**:\n\n- **Wednesday 16 Sep",
+      "attributes": {
+       "tool_response": "Events happening between **Monday 14 September and Sunday 20 September 2026**:\n\n- **Wednesday 16 September** \u2014 Robotics Club Build Night, Lab 2\n- **Friday 18 September** \u2014 Debate Society Open Floor, Hall A\n- **Sunday 20 September** \u2014 Robotics Club Social, Quad",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:13.169",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:13.170",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:13.315",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:13.315",
+      "event_name": "copilot_cli_session_usage_checkpoint",
+      "body": "session.usage_checkpoint",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:13.321",
+      "event_name": "copilot_cli_session_shutdown",
+      "body": "session.shutdown",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 24
+   }
+  },
+  {
+   "summary": {
+    "session_id": "6cd965cc-7219-4806-bbb9-65e6558cce34",
+    "first_event_time": "2026-09-24 17:17:48.400",
+    "last_event_time": "2026-09-24 17:17:48.866",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Copilot CLI",
+    "service_name": "copilot-cli",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "6cd965cc-7219-4806-bbb9-65e6558cce34",
+    "service_name": "copilot-cli",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:09:34.184",
+      "event_name": "hook_sessionstart",
+      "body": "session start (cwd: /private/tmp/mcp-exp/run-A-copilot-3)",
+      "attributes": {
+       "session_id": "6cd965cc-7219-4806-bbb9-65e6558cce34",
+       "cwd": "/private/tmp/mcp-exp/run-A-copilot-3"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:35.541",
+      "event_name": "copilot_cli_session_model_change",
+      "body": "session.model_change",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:35.919",
+      "event_name": "copilot_cli_session_auto_mode_resolved",
+      "body": "session.auto_mode_resolved",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:35.933",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:36.028",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:36.028",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:36.029",
+      "event_name": "copilot_cli_system_message",
+      "body": "system.message",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:36.029",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:36.096",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:36.100",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.180",
+      "event_name": "hook_assistant_response",
+      "body": "",
+      "attributes": {
+       "tool_response": "",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.181",
+      "event_name": "copilot_cli_tool_execution_start",
+      "body": "tool.execution_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.182",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.332",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.336",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.474",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.474",
+      "event_name": "hook_toolresult",
+      "body": "tool_result",
+      "attributes": {
+       "tool_name": "",
+       "tool_response": "{\"content\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"}]\", \"detailedContent\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"}]\"}",
+       "tool_use_id": "8dffc789-22c4-472e-a9b2-fb6c9bb84517"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.475",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:39.475",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:40.568",
+      "event_name": "hook_assistant_response",
+      "body": "- **Wednesday, 16 September 2026** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September 2026*",
+      "attributes": {
+       "tool_response": "- **Wednesday, 16 September 2026** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September 2026** \u2014 Debate Society Open Floor, Hall A",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:40.569",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:40.570",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:40.719",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:40.720",
+      "event_name": "copilot_cli_session_usage_checkpoint",
+      "body": "session.usage_checkpoint",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:40.725",
+      "event_name": "copilot_cli_session_shutdown",
+      "body": "session.shutdown",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 24
+   }
+  },
+  {
+   "summary": {
+    "session_id": "b675b052-50a1-4aef-a91f-67c86945c3a1",
+    "first_event_time": "2026-09-24 17:17:47.454",
+    "last_event_time": "2026-09-24 17:17:47.942",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Copilot CLI",
+    "service_name": "copilot-cli",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "b675b052-50a1-4aef-a91f-67c86945c3a1",
+    "service_name": "copilot-cli",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:09:04.417",
+      "event_name": "hook_sessionstart",
+      "body": "session start (cwd: /private/tmp/mcp-exp/run-A-copilot-2)",
+      "attributes": {
+       "session_id": "b675b052-50a1-4aef-a91f-67c86945c3a1",
+       "cwd": "/private/tmp/mcp-exp/run-A-copilot-2"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:05.725",
+      "event_name": "copilot_cli_session_model_change",
+      "body": "session.model_change",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.092",
+      "event_name": "copilot_cli_session_auto_mode_resolved",
+      "body": "session.auto_mode_resolved",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.107",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.205",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.206",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.206",
+      "event_name": "copilot_cli_system_message",
+      "body": "system.message",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.206",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.278",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:06.279",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:08.871",
+      "event_name": "hook_assistant_response",
+      "body": "",
+      "attributes": {
+       "tool_response": "",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:08.872",
+      "event_name": "copilot_cli_tool_execution_start",
+      "body": "tool.execution_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:08.873",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:09.024",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:09.029",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:09.159",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:09.160",
+      "event_name": "hook_toolresult",
+      "body": "tool_result",
+      "attributes": {
+       "tool_name": "",
+       "tool_response": "{\"content\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"}]\", \"detailedContent\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"}]\"}",
+       "tool_use_id": "6a9cbfd6-7714-46d3-903d-7bc2071386e0"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:09.160",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:09.161",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:10.013",
+      "event_name": "hook_assistant_response",
+      "body": "- **Wednesday, 16 September 2026** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September 2026*",
+      "attributes": {
+       "tool_response": "- **Wednesday, 16 September 2026** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September 2026** \u2014 Debate Society Open Floor, Hall A",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:10.013",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:10.014",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:10.151",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:10.151",
+      "event_name": "copilot_cli_session_usage_checkpoint",
+      "body": "session.usage_checkpoint",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:10.156",
+      "event_name": "copilot_cli_session_shutdown",
+      "body": "session.shutdown",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 24
+   }
+  },
+  {
+   "summary": {
+    "session_id": "4c9c84f9-3666-4635-93c0-ba4554c9c461",
+    "first_event_time": "2026-09-24 17:17:46.494",
+    "last_event_time": "2026-09-24 17:17:46.977",
+    "is_active": true,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_cache_read_tokens": 0,
+    "total_cache_write_tokens": 0,
+    "total_credits": 0,
+    "model": "",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Copilot CLI",
+    "service_name": "copilot-cli",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "4c9c84f9-3666-4635-93c0-ba4554c9c461",
+    "service_name": "copilot-cli",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:08:34.530",
+      "event_name": "hook_sessionstart",
+      "body": "session start (cwd: /private/tmp/mcp-exp/run-A-copilot-1)",
+      "attributes": {
+       "session_id": "4c9c84f9-3666-4635-93c0-ba4554c9c461",
+       "cwd": "/private/tmp/mcp-exp/run-A-copilot-1"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.020",
+      "event_name": "copilot_cli_session_model_change",
+      "body": "session.model_change",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.411",
+      "event_name": "copilot_cli_session_auto_mode_resolved",
+      "body": "session.auto_mode_resolved",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.423",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.519",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.520",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.520",
+      "event_name": "copilot_cli_system_message",
+      "body": "system.message",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.521",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.590",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:36.591",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:39.741",
+      "event_name": "hook_assistant_response",
+      "body": "",
+      "attributes": {
+       "tool_response": "",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:39.742",
+      "event_name": "copilot_cli_tool_execution_start",
+      "body": "tool.execution_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:39.743",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:39.902",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:39.908",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:40.044",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:40.044",
+      "event_name": "hook_toolresult",
+      "body": "tool_result",
+      "attributes": {
+       "tool_name": "",
+       "tool_response": "{\"content\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"}]\", \"detailedContent\": \"[{\\\"id\\\":1,\\\"title\\\":\\\"Robotics Club Build Night\\\",\\\"date\\\":\\\"2026-09-16\\\",\\\"venue\\\":\\\"Lab 2\\\"},{\\\"id\\\":2,\\\"title\\\":\\\"Debate Society Open Floor\\\",\\\"date\\\":\\\"2026-09-18\\\",\\\"venue\\\":\\\"Hall A\\\"}]\"}",
+       "tool_use_id": "35198dca-abcf-40aa-b866-2578865117b4"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:40.045",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:40.046",
+      "event_name": "copilot_cli_assistant_turn_start",
+      "body": "assistant.turn_start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:41.545",
+      "event_name": "hook_assistant_response",
+      "body": "- **Wednesday, 16 September 2026** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September 2026*",
+      "attributes": {
+       "tool_response": "- **Wednesday, 16 September 2026** \u2014 Robotics Club Build Night, Lab 2\n- **Friday, 18 September 2026** \u2014 Debate Society Open Floor, Hall A",
+       "model": "gpt-5.6-luna"
+      },
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:41.546",
+      "event_name": "copilot_cli_assistant_turn_end",
+      "body": "assistant.turn_end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:41.547",
+      "event_name": "copilot_cli_hook_start",
+      "body": "hook.start",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:41.692",
+      "event_name": "copilot_cli_hook_end",
+      "body": "hook.end",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:41.693",
+      "event_name": "copilot_cli_session_usage_checkpoint",
+      "body": "session.usage_checkpoint",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:41.699",
+      "event_name": "copilot_cli_session_shutdown",
+      "body": "session.shutdown",
+      "attributes": {},
+      "service_name": "copilot-cli"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 24
+   }
+  },
+  {
+   "summary": {
+    "session_id": "bbbc8c4b-7f17-49fb-855c-ce25d4352f0f",
+    "first_event_time": "2026-09-24 17:11:03.669",
+    "last_event_time": "2026-09-24 17:11:12.067",
+    "is_active": false,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 8,
+    "total_output_tokens": 616,
+    "total_cache_read_tokens": 20352,
+    "total_cache_write_tokens": 16796,
+    "total_credits": 0,
+    "model": "claude-sonnet-5",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Claude Code",
+    "service_name": "claude-code",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "bbbc8c4b-7f17-49fb-855c-ce25d4352f0f",
+    "service_name": "claude-code",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:11:03.690",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:03.690",
+      "event_name": "system",
+      "body": "",
+      "attributes": {
+       "tool_name": "",
+       "tool_id": "",
+       "uuid": "",
+       "parent_uuid": "",
+       "content_length": "119"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:07.216",
+      "event_name": "hook_assistant_thinking",
+      "body": "",
+      "attributes": {
+       "tool_response": ""
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:07.216",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "159",
+       "cache_read_tokens": "3716",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:07.582",
+      "event_name": "hook_assistant_response",
+      "body": "I'll fetch the events for that week.",
+      "attributes": {
+       "tool_response": "I'll fetch the events for that week.",
+       "input_tokens": "2",
+       "output_tokens": "159",
+       "cache_read_tokens": "3716",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:07.940",
+      "event_name": "hook_posttooluse",
+      "body": "mcp__campus-events__get_events_in_range",
+      "attributes": {
+       "tool_name": "mcp__campus-events__get_events_in_range",
+       "tool_input": "{\"start\": \"2026-09-14\", \"end\": \"2026-09-21\"}",
+       "tool_use_id": "toolu_01Ttfqd3YZfYCaKXeNER9Vy9",
+       "tool_response": "[\n  {\n    \"id\": 1,\n    \"title\": \"Robotics Club Build Night\",\n    \"date\": \"2026-09-16\",\n    \"venue\": \"Lab 2\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Debate Society Open Floor\",\n    \"date\": \"2026-09-18\",\n    \"venue\": \"Hall A\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Robotics Club Social\",\n    \"date\": \"2026-09-20\",\n    \"venue\": \"Quad\"\n  }\n]"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:07.940",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "159",
+       "cache_read_tokens": "3716",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:11.448",
+      "event_name": "hook_assistant_response",
+      "body": "Here are the events between Monday, September 14 and Sunday, September 20, 2026:\n\n| Date | Event | V",
+      "attributes": {
+       "tool_response": "Here are the events between Monday, September 14 and Sunday, September 20, 2026:\n\n| Date | Event | Venue |\n|---|---|---|\n| Sep 16 (Wed) | Robotics Club Build Night | Lab 2 |\n| Sep 18 (Fri) | Debate Society Open Floor | Hall A |\n| Sep 20 (Sun) | Robotics Club Social | Quad |",
+       "input_tokens": "2",
+       "output_tokens": "139",
+       "cache_read_tokens": "9204",
+       "cache_creation_tokens": "332",
+       "model": "claude-sonnet-5",
+       "stop_reason": "end_turn"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:11:12.067",
+      "event_name": "attachment",
+      "body": "",
+      "attributes": {
+       "attachment_type": "hook_success",
+       "attachment_name": ""
+      },
+      "service_name": "claude-code"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 10
+   }
+  },
+  {
+   "summary": {
+    "session_id": "8a3b3dfa-aee0-4056-92b9-2340a4d0601c",
+    "first_event_time": "2026-09-24 17:10:30.844",
+    "last_event_time": "2026-09-24 17:10:35.342",
+    "is_active": false,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 8,
+    "total_output_tokens": 655,
+    "total_cache_read_tokens": 20352,
+    "total_cache_write_tokens": 16815,
+    "total_credits": 0,
+    "model": "claude-sonnet-5",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Claude Code",
+    "service_name": "claude-code",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "8a3b3dfa-aee0-4056-92b9-2340a4d0601c",
+    "service_name": "claude-code",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:10:30.868",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:30.868",
+      "event_name": "system",
+      "body": "",
+      "attributes": {
+       "tool_name": "",
+       "tool_id": "",
+       "uuid": "",
+       "parent_uuid": "",
+       "content_length": "115"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:32.428",
+      "event_name": "hook_assistant_thinking",
+      "body": "",
+      "attributes": {
+       "tool_response": ""
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:32.428",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "178",
+       "cache_read_tokens": "3716",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:32.708",
+      "event_name": "hook_assistant_response",
+      "body": "I'll fetch the events for that week.",
+      "attributes": {
+       "tool_response": "I'll fetch the events for that week.",
+       "input_tokens": "2",
+       "output_tokens": "178",
+       "cache_read_tokens": "3716",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:33.134",
+      "event_name": "hook_posttooluse",
+      "body": "mcp__campus-events__get_events_in_range",
+      "attributes": {
+       "tool_name": "mcp__campus-events__get_events_in_range",
+       "tool_input": "{\"start\": \"2026-09-14\", \"end\": \"2026-09-21\"}",
+       "tool_use_id": "toolu_011ZAcmGysD5UsDYVhfHbqM9",
+       "tool_response": "[\n  {\n    \"id\": 1,\n    \"title\": \"Robotics Club Build Night\",\n    \"date\": \"2026-09-16\",\n    \"venue\": \"Lab 2\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Debate Society Open Floor\",\n    \"date\": \"2026-09-18\",\n    \"venue\": \"Hall A\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Robotics Club Social\",\n    \"date\": \"2026-09-20\",\n    \"venue\": \"Quad\"\n  }\n]"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:33.134",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "178",
+       "cache_read_tokens": "3716",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:34.738",
+      "event_name": "hook_assistant_response",
+      "body": "Here are the events for Monday, September 14 \u2013 Sunday, September 20, 2026:\n\n1. **Robotics Club Build",
+      "attributes": {
+       "tool_response": "Here are the events for Monday, September 14 \u2013 Sunday, September 20, 2026:\n\n1. **Robotics Club Build Night** \u2014 Wed, Sep 16, at Lab 2\n2. **Debate Society Open Floor** \u2014 Fri, Sep 18, at Hall A\n3. **Robotics Club Social** \u2014 Sun, Sep 20, at Quad",
+       "input_tokens": "2",
+       "output_tokens": "121",
+       "cache_read_tokens": "9204",
+       "cache_creation_tokens": "351",
+       "model": "claude-sonnet-5",
+       "stop_reason": "end_turn"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:35.342",
+      "event_name": "attachment",
+      "body": "",
+      "attributes": {
+       "attachment_type": "hook_success",
+       "attachment_name": ""
+      },
+      "service_name": "claude-code"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 10
+   }
+  },
+  {
+   "summary": {
+    "session_id": "9fb289ba-2a00-4a1c-9229-e8883421b0a8",
+    "first_event_time": "2026-09-24 17:09:58.035",
+    "last_event_time": "2026-09-24 17:10:03.691",
+    "is_active": false,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 6,
+    "total_output_tokens": 412,
+    "total_cache_read_tokens": 9204,
+    "total_cache_write_tokens": 18731,
+    "total_credits": 0,
+    "model": "claude-sonnet-5",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Claude Code",
+    "service_name": "claude-code",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "9fb289ba-2a00-4a1c-9229-e8883421b0a8",
+    "service_name": "claude-code",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:09:58.057",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:58.057",
+      "event_name": "system",
+      "body": "",
+      "attributes": {
+       "tool_name": "",
+       "tool_id": "",
+       "uuid": "",
+       "parent_uuid": "",
+       "content_length": "120"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:00.858",
+      "event_name": "hook_assistant_thinking",
+      "body": "",
+      "attributes": {
+       "tool_response": ""
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:00.858",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "150",
+       "cache_creation_tokens": "9204",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:00.946",
+      "event_name": "hook_posttooluse",
+      "body": "mcp__campus-events__get_events_in_range",
+      "attributes": {
+       "tool_name": "mcp__campus-events__get_events_in_range",
+       "tool_input": "{\"start\": \"2026-09-14\", \"end\": \"2026-09-21\"}",
+       "tool_use_id": "toolu_01P72W44GuR7MtabfhYnV9gD",
+       "tool_response": "[\n  {\n    \"id\": 1,\n    \"title\": \"Robotics Club Build Night\",\n    \"date\": \"2026-09-16\",\n    \"venue\": \"Lab 2\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Debate Society Open Floor\",\n    \"date\": \"2026-09-18\",\n    \"venue\": \"Hall A\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Robotics Club Social\",\n    \"date\": \"2026-09-20\",\n    \"venue\": \"Quad\"\n  }\n]"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:00.946",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "150",
+       "cache_creation_tokens": "9204",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:03.077",
+      "event_name": "hook_assistant_response",
+      "body": "Here are the events for the week of September 14\u201320, 2026:\n\n- **Sep 16 (Wed)** \u2014 Robotics Club Build",
+      "attributes": {
+       "tool_response": "Here are the events for the week of September 14\u201320, 2026:\n\n- **Sep 16 (Wed)** \u2014 Robotics Club Build Night, Lab 2\n- **Sep 18 (Fri)** \u2014 Debate Society Open Floor, Hall A\n- **Sep 20 (Sun)** \u2014 Robotics Club Social, Quad",
+       "input_tokens": "2",
+       "output_tokens": "112",
+       "cache_read_tokens": "9204",
+       "cache_creation_tokens": "323",
+       "model": "claude-sonnet-5",
+       "stop_reason": "end_turn"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:10:03.691",
+      "event_name": "attachment",
+      "body": "",
+      "attributes": {
+       "attachment_type": "hook_success",
+       "attachment_name": ""
+      },
+      "service_name": "claude-code"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 9
+   }
+  },
+  {
+   "summary": {
+    "session_id": "4591fe06-8b57-4a3f-9e17-a6a81441a93c",
+    "first_event_time": "2026-09-24 17:09:26.206",
+    "last_event_time": "2026-09-24 17:09:31.397",
+    "is_active": false,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 6,
+    "total_output_tokens": 309,
+    "total_cache_read_tokens": 16573,
+    "total_cache_write_tokens": 11199,
+    "total_credits": 0,
+    "model": "claude-sonnet-5",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Claude Code",
+    "service_name": "claude-code",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "4591fe06-8b57-4a3f-9e17-a6a81441a93c",
+    "service_name": "claude-code",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:09:26.229",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:26.229",
+      "event_name": "system",
+      "body": "",
+      "attributes": {
+       "tool_name": "",
+       "tool_id": "",
+       "uuid": "",
+       "parent_uuid": "",
+       "content_length": "119"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:28.134",
+      "event_name": "hook_assistant_thinking",
+      "body": "",
+      "attributes": {
+       "tool_response": ""
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:28.134",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "103",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:28.453",
+      "event_name": "hook_posttooluse",
+      "body": "mcp__campus-events__get_events_in_range",
+      "attributes": {
+       "tool_name": "mcp__campus-events__get_events_in_range",
+       "tool_input": "{\"start\": \"2026-09-14\", \"end\": \"2026-09-20\"}",
+       "tool_use_id": "toolu_0113x5PZBE5WMmXss4ZExcD5",
+       "tool_response": "[\n  {\n    \"id\": 1,\n    \"title\": \"Robotics Club Build Night\",\n    \"date\": \"2026-09-16\",\n    \"venue\": \"Lab 2\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Debate Society Open Floor\",\n    \"date\": \"2026-09-18\",\n    \"venue\": \"Hall A\"\n  }\n]"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:28.453",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "103",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:30.769",
+      "event_name": "hook_assistant_response",
+      "body": "Here are the events scheduled for that week (Mon Sep 14 \u2013 Sun Sep 20, 2026):\n\n1. **Robotics Club Bui",
+      "attributes": {
+       "tool_response": "Here are the events scheduled for that week (Mon Sep 14 \u2013 Sun Sep 20, 2026):\n\n1. **Robotics Club Build Night** \u2014 Wed, Sep 16 @ Lab 2\n2. **Debate Society Open Floor** \u2014 Fri, Sep 18 @ Hall A",
+       "input_tokens": "2",
+       "output_tokens": "103",
+       "cache_read_tokens": "9183",
+       "cache_creation_tokens": "223",
+       "model": "claude-sonnet-5",
+       "stop_reason": "end_turn"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:31.397",
+      "event_name": "attachment",
+      "body": "",
+      "attributes": {
+       "attachment_type": "hook_success",
+       "attachment_name": ""
+      },
+      "service_name": "claude-code"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 9
+   }
+  },
+  {
+   "summary": {
+    "session_id": "74d5c296-5c10-4ade-8bb8-7315ba579424",
+    "first_event_time": "2026-09-24 17:08:57.237",
+    "last_event_time": "2026-09-24 17:09:01.486",
+    "is_active": false,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 8,
+    "total_output_tokens": 529,
+    "total_cache_read_tokens": 20268,
+    "total_cache_write_tokens": 16726,
+    "total_credits": 0,
+    "model": "claude-sonnet-5",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Claude Code",
+    "service_name": "claude-code",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "74d5c296-5c10-4ade-8bb8-7315ba579424",
+    "service_name": "claude-code",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:08:57.255",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:57.255",
+      "event_name": "system",
+      "body": "",
+      "attributes": {
+       "tool_name": "",
+       "tool_id": "",
+       "uuid": "",
+       "parent_uuid": "",
+       "content_length": "119"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:58.632",
+      "event_name": "hook_assistant_thinking",
+      "body": "",
+      "attributes": {
+       "tool_response": ""
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:58.632",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "142",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:58.853",
+      "event_name": "hook_assistant_response",
+      "body": "I'll fetch the events for that date range.",
+      "attributes": {
+       "tool_response": "I'll fetch the events for that date range.",
+       "input_tokens": "2",
+       "output_tokens": "142",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:59.441",
+      "event_name": "hook_posttooluse",
+      "body": "mcp__campus-events__get_events_in_range",
+      "attributes": {
+       "tool_name": "mcp__campus-events__get_events_in_range",
+       "tool_input": "{\"start\": \"2026-09-14\", \"end\": \"2026-09-20\"}",
+       "tool_use_id": "toolu_01LecFksJtEErcBhzAfDEQuU",
+       "tool_response": "[\n  {\n    \"id\": 1,\n    \"title\": \"Robotics Club Build Night\",\n    \"date\": \"2026-09-16\",\n    \"venue\": \"Lab 2\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Debate Society Open Floor\",\n    \"date\": \"2026-09-18\",\n    \"venue\": \"Hall A\"\n  }\n]"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:59.441",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "142",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:00.957",
+      "event_name": "hook_assistant_response",
+      "body": "Here are the events between Monday, September 14 and Sunday, September 20, 2026:\n\n1. **Robotics Club",
+      "attributes": {
+       "tool_response": "Here are the events between Monday, September 14 and Sunday, September 20, 2026:\n\n1. **Robotics Club Build Night** \u2014 Wednesday, Sep 16, 2026 \u2014 Lab 2\n2. **Debate Society Open Floor** \u2014 Friday, Sep 18, 2026 \u2014 Hall A",
+       "input_tokens": "2",
+       "output_tokens": "103",
+       "cache_read_tokens": "9183",
+       "cache_creation_tokens": "262",
+       "model": "claude-sonnet-5",
+       "stop_reason": "end_turn"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:09:01.486",
+      "event_name": "attachment",
+      "body": "",
+      "attributes": {
+       "attachment_type": "hook_success",
+       "attachment_name": ""
+      },
+      "service_name": "claude-code"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 10
+   }
+  },
+  {
+   "summary": {
+    "session_id": "8d96d340-5efa-458d-b7af-685c1e32b1a7",
+    "first_event_time": "2026-09-24 17:08:26.896",
+    "last_event_time": "2026-09-24 17:08:31.760",
+    "is_active": false,
+    "prompt_count": 1,
+    "api_request_count": 0,
+    "tool_result_count": 1,
+    "total_input_tokens": 8,
+    "total_output_tokens": 523,
+    "total_cache_read_tokens": 20268,
+    "total_cache_write_tokens": 16725,
+    "total_credits": 0,
+    "model": "claude-sonnet-5",
+    "agent_id": null,
+    "agent_version": null,
+    "user_id": "<observal-user-id>",
+    "user_name": "Demo Admin",
+    "platform": "Claude Code",
+    "service_name": "claude-code",
+    "agent_name": null
+   },
+   "detail": {
+    "session_id": "8d96d340-5efa-458d-b7af-685c1e32b1a7",
+    "service_name": "claude-code",
+    "agent_id": null,
+    "agent_name": null,
+    "agent_version": null,
+    "events": [
+     {
+      "timestamp": "2026-09-24 17:08:26.917",
+      "event_name": "hook_userpromptsubmit",
+      "body": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all ",
+      "attributes": {
+       "tool_input": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them."
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:26.917",
+      "event_name": "system",
+      "body": "",
+      "attributes": {
+       "tool_name": "",
+       "tool_id": "",
+       "uuid": "",
+       "parent_uuid": "",
+       "content_length": "120"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:28.602",
+      "event_name": "hook_assistant_thinking",
+      "body": "",
+      "attributes": {
+       "tool_response": ""
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:28.602",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "141",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:28.885",
+      "event_name": "hook_assistant_response",
+      "body": "I'll fetch events for that week.",
+      "attributes": {
+       "tool_response": "I'll fetch events for that week.",
+       "input_tokens": "2",
+       "output_tokens": "141",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:29.543",
+      "event_name": "hook_posttooluse",
+      "body": "mcp__campus-events__get_events_in_range",
+      "attributes": {
+       "tool_name": "mcp__campus-events__get_events_in_range",
+       "tool_input": "{\"start\": \"2026-09-14\", \"end\": \"2026-09-20\"}",
+       "tool_use_id": "toolu_01UxZttqcPdb13AZZQ5Cr2xm",
+       "tool_response": "[\n  {\n    \"id\": 1,\n    \"title\": \"Robotics Club Build Night\",\n    \"date\": \"2026-09-16\",\n    \"venue\": \"Lab 2\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Debate Society Open Floor\",\n    \"date\": \"2026-09-18\",\n    \"venue\": \"Hall A\"\n  }\n]"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:29.543",
+      "event_name": "hook_token_usage",
+      "body": "",
+      "attributes": {
+       "input_tokens": "2",
+       "output_tokens": "141",
+       "cache_read_tokens": "3695",
+       "cache_creation_tokens": "5488",
+       "model": "claude-sonnet-5",
+       "stop_reason": "tool_use"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:31.154",
+      "event_name": "hook_assistant_response",
+      "body": "Events between Monday, September 14 and Sunday, September 20, 2026:\n\n1. **Robotics Club Build Night*",
+      "attributes": {
+       "tool_response": "Events between Monday, September 14 and Sunday, September 20, 2026:\n\n1. **Robotics Club Build Night** \u2014 Wednesday, Sept 16, 2026 at Lab 2\n2. **Debate Society Open Floor** \u2014 Friday, Sept 18, 2026 at Hall A",
+       "input_tokens": "2",
+       "output_tokens": "100",
+       "cache_read_tokens": "9183",
+       "cache_creation_tokens": "261",
+       "model": "claude-sonnet-5",
+       "stop_reason": "end_turn"
+      },
+      "service_name": "claude-code"
+     },
+     {
+      "timestamp": "2026-09-24 17:08:31.760",
+      "event_name": "attachment",
+      "body": "",
+      "attributes": {
+       "attachment_type": "hook_success",
+       "attachment_name": ""
+      },
+      "service_name": "claude-code"
+     }
+    ],
+    "traces": [],
+    "subagent_sessions": [],
+    "max_offset": 10
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+  "label": "run-A-copilot-1",
+  "agent": "copilot",
+  "round": "A",
+  "repeat": 1,
+  "setup_check": false,
+  "cli_version": "GitHub Copilot CLI 1.0.83.\nRun 'copilot update' to check for updates.",
+  "workspace": "/private/tmp/mcp-exp/run-A-copilot-1",
+  "requested_session_id": "4c9c84f9-3666-4635-93c0-ba4554c9c461",
+  "prompt": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them.",
+  "argv": [
+    "copilot",
+    "-p",
+    "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them.",
+    "--additional-mcp-config",
+    "{\"mcpServers\": {\"campus-events\": {\"type\": \"local\", \"tools\": [\"*\"], \"command\": \"/Users/<user>/.nvm/versions/node/v22.23.2/bin/node\", \"args\": [\"/Users/<user>/agent-trace-experiment/mcp-experiment/server.mjs\"], \"env\": {\"EVENTS_TOOL_DESCRIPTION\": \"A\", \"MCP_RUN_LABEL\": \"run-A-copilot-1\", \"MCP_LOG_FILE\": \"/Users/<user>/agent-trace-experiment/mcp-experiment/results/raw/server-log.jsonl\"}}}}",
+    "--disable-builtin-mcps",
+    "--available-tools=campus-events-get_events_in_range",
+    "--allow-tool=campus-events(get_events_in_range)",
+    "--no-ask-user",
+    "--disallow-temp-dir",
+    "--no-remote-export",
+    "--no-auto-update",
+    "--output-format",
+    "json",
+    "--session-id",
+    "4c9c84f9-3666-4635-93c0-ba4554c9c461"
+  ],
+  "started": "2026-09-24T17:08:32.754+00:00",
+  "exit_code": 0,
+  "finished": "2026-09-24T17:08:43.460+00:00",
+  "workspace_after": []
+}

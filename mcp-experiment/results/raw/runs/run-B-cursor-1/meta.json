@@ -1,0 +1,44 @@
+{
+  "label": "run-B-cursor-1",
+  "agent": "cursor",
+  "round": "B",
+  "repeat": 1,
+  "setup_check": false,
+  "cli_version": "2026.09.10-fd3934a",
+  "workspace": "/private/tmp/mcp-exp/run-B-cursor-1",
+  "requested_session_id": null,
+  "prompt": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them.",
+  "argv": [
+    "cursor-agent",
+    "-p",
+    "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them.",
+    "--output-format",
+    "stream-json",
+    "--approve-mcps",
+    "--trust",
+    "--workspace",
+    "/private/tmp/mcp-exp/run-B-cursor-1"
+  ],
+  "started": "2026-09-24T17:10:15.420+00:00",
+  "exit_code": 0,
+  "cursor_global_mcp_json": {
+    "mcpServers": {
+      "campus-events": {
+        "command": "/Users/<user>/.nvm/versions/node/v22.23.2/bin/node",
+        "args": [
+          "/Users/<user>/agent-trace-experiment/mcp-experiment/server.mjs"
+        ],
+        "env": {
+          "EVENTS_TOOL_DESCRIPTION": "B",
+          "MCP_RUN_LABEL": "run-B-cursor-1",
+          "MCP_LOG_FILE": "/Users/<user>/agent-trace-experiment/mcp-experiment/results/raw/server-log.jsonl"
+        }
+      }
+    }
+  },
+  "finished": "2026-09-24T17:10:29.770+00:00",
+  "workspace_after": [
+    ".cursor",
+    ".cursor/cli.json"
+  ]
+}

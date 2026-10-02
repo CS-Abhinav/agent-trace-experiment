@@ -1,0 +1,32 @@
+{
+  "label": "run-B-claude-3",
+  "agent": "claude",
+  "round": "B",
+  "repeat": 3,
+  "setup_check": false,
+  "cli_version": "2.1.220 (Claude Code)",
+  "workspace": "/private/tmp/mcp-exp/run-B-claude-3",
+  "requested_session_id": "bbbc8c4b-7f17-49fb-855c-ce25d4352f0f",
+  "prompt": "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them.",
+  "argv": [
+    "claude",
+    "-p",
+    "What events are happening between Monday 14 September and Sunday 20 September 2026? Please list all of them.",
+    "--mcp-config",
+    "{\"mcpServers\": {\"campus-events\": {\"type\": \"stdio\", \"command\": \"/Users/<user>/.nvm/versions/node/v22.23.2/bin/node\", \"args\": [\"/Users/<user>/agent-trace-experiment/mcp-experiment/server.mjs\"], \"env\": {\"EVENTS_TOOL_DESCRIPTION\": \"B\", \"MCP_RUN_LABEL\": \"run-B-claude-3\", \"MCP_LOG_FILE\": \"/Users/<user>/agent-trace-experiment/mcp-experiment/results/raw/server-log.jsonl\"}}}}",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--allowedTools",
+    "mcp__campus-events__get_events_in_range",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--session-id",
+    "bbbc8c4b-7f17-49fb-855c-ce25d4352f0f"
+  ],
+  "started": "2026-09-24T17:11:02.964+00:00",
+  "exit_code": 0,
+  "finished": "2026-09-24T17:11:12.677+00:00",
+  "workspace_after": []
+}

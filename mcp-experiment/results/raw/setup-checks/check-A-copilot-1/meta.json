@@ -1,0 +1,33 @@
+{
+  "label": "check-A-copilot-1",
+  "agent": "copilot",
+  "round": "A",
+  "repeat": 1,
+  "setup_check": true,
+  "cli_version": "GitHub Copilot CLI 1.0.83.\nRun 'copilot update' to check for updates.",
+  "workspace": "/private/tmp/mcp-exp/check-A-copilot-1",
+  "requested_session_id": "8e6f14c3-451a-4f70-b338-46500ce51ebe",
+  "prompt": "List the names of the tools you have available. Do not call any tools.",
+  "argv": [
+    "copilot",
+    "-p",
+    "List the names of the tools you have available. Do not call any tools.",
+    "--additional-mcp-config",
+    "{\"mcpServers\": {\"campus-events\": {\"type\": \"local\", \"tools\": [\"*\"], \"command\": \"/Users/<user>/.nvm/versions/node/v22.23.2/bin/node\", \"args\": [\"/Users/<user>/agent-trace-experiment/mcp-experiment/server.mjs\"], \"env\": {\"EVENTS_TOOL_DESCRIPTION\": \"A\", \"MCP_RUN_LABEL\": \"check-A-copilot-1\", \"MCP_LOG_FILE\": \"/Users/<user>/agent-trace-experiment/mcp-experiment/results/raw/setup-checks-server-log.jsonl\"}}}}",
+    "--disable-builtin-mcps",
+    "--available-tools=campus-events-get_events_in_range",
+    "--allow-tool=campus-events(get_events_in_range)",
+    "--no-ask-user",
+    "--disallow-temp-dir",
+    "--no-remote-export",
+    "--no-auto-update",
+    "--output-format",
+    "json",
+    "--session-id",
+    "8e6f14c3-451a-4f70-b338-46500ce51ebe"
+  ],
+  "started": "2026-09-24T17:03:35.448+00:00",
+  "exit_code": 0,
+  "finished": "2026-09-24T17:03:43.100+00:00",
+  "workspace_after": []
+}

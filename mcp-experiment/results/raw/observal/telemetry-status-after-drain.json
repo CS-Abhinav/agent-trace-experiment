@@ -1,0 +1,17 @@
+{
+  "server": {
+    "tool_call_events": 434,
+    "agent_interaction_events": 30,
+    "status": "ok"
+  },
+  "outbox": {
+    "available": true,
+    "pending": 0,
+    "failed": 29,
+    "sent": 0,
+    "total": 29,
+    "oldest_pending": null,
+    "last_sync": "2026-09-24 17:19:11",
+    "bytes": 24576
+  }
+}

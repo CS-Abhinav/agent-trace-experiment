@@ -1,0 +1,44 @@
+{
+  "label": "check-A-cursor-3",
+  "agent": "cursor",
+  "round": "A",
+  "repeat": 3,
+  "setup_check": true,
+  "cli_version": "2026.09.10-fd3934a",
+  "workspace": "/private/tmp/mcp-exp/check-A-cursor-3",
+  "requested_session_id": null,
+  "prompt": "List the names of the tools you have available. Do not call any tools.",
+  "argv": [
+    "cursor-agent",
+    "-p",
+    "List the names of the tools you have available. Do not call any tools.",
+    "--output-format",
+    "stream-json",
+    "--approve-mcps",
+    "--trust",
+    "--workspace",
+    "/private/tmp/mcp-exp/check-A-cursor-3"
+  ],
+  "started": "2026-09-24T17:05:58.867+00:00",
+  "exit_code": 0,
+  "cursor_global_mcp_json": {
+    "mcpServers": {
+      "campus-events": {
+        "command": "/Users/<user>/.nvm/versions/node/v22.23.2/bin/node",
+        "args": [
+          "/Users/<user>/agent-trace-experiment/mcp-experiment/server.mjs"
+        ],
+        "env": {
+          "EVENTS_TOOL_DESCRIPTION": "A",
+          "MCP_RUN_LABEL": "check-A-cursor-3",
+          "MCP_LOG_FILE": "/Users/<user>/agent-trace-experiment/mcp-experiment/results/raw/setup-checks-server-log.jsonl"
+        }
+      }
+    }
+  },
+  "finished": "2026-09-24T17:06:11.430+00:00",
+  "workspace_after": [
+    ".cursor",
+    ".cursor/cli.json"
+  ]
+}

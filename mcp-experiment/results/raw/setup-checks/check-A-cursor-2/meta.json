@@ -1,0 +1,30 @@
+{
+  "label": "check-A-cursor-2",
+  "agent": "cursor",
+  "round": "A",
+  "repeat": 2,
+  "setup_check": true,
+  "cli_version": "2026.09.10-fd3934a",
+  "workspace": "/private/tmp/mcp-exp/check-A-cursor-2",
+  "requested_session_id": null,
+  "prompt": "Read the file .cursor/mcp.json in this workspace, then read the server.mjs file it points to, and print the first 5 lines of each. Also run the shell command: ls -la",
+  "argv": [
+    "cursor-agent",
+    "-p",
+    "Read the file .cursor/mcp.json in this workspace, then read the server.mjs file it points to, and print the first 5 lines of each. Also run the shell command: ls -la",
+    "--output-format",
+    "stream-json",
+    "--approve-mcps",
+    "--trust",
+    "--workspace",
+    "/private/tmp/mcp-exp/check-A-cursor-2"
+  ],
+  "started": "2026-09-24T17:04:26.354+00:00",
+  "exit_code": 0,
+  "finished": "2026-09-24T17:05:15.855+00:00",
+  "workspace_after": [
+    ".cursor",
+    ".cursor/cli.json",
+    ".cursor/mcp.json"
+  ]
+}

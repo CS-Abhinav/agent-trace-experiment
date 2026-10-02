@@ -1,0 +1,21 @@
+{"type":"system","subtype":"init","apiKeySource":"login","cwd":"/private/tmp/mcp-exp/check-A-cursor-3","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","model":"Auto","permissionMode":"default"}
+{"type":"user","message":{"role":"user","content":[{"type":"text","text":"List the names of the tools you have available. Do not call any tools."}]},"session_id":"a3b6a153-0a78-48f2-adce-705294e533c5"}
+{"type":"thinking","subtype":"delta","text":"I will list my available","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269567565}
+{"type":"thinking","subtype":"delta","text":" tools without calling","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269567697}
+{"type":"thinking","subtype":"delta","text":" them.","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269567873}
+{"type":"thinking","subtype":"delta","text":"\n\nAvailable regular ","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570909}
+{"type":"thinking","subtype":"delta","text":"tools include Shell,","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" Grep, StrReplace, Write,","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" Read, Glob, GetDynamicTools,","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" and CallDynamicTool.","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" Dynamic tool namespaces","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" include campus-events","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" and cursor. Subagents","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" include generalPurpose,","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" explore, cursor-guide,","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" ci-investigator, bugbot,","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" security-review, and","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"delta","text":" best-of-n-runner.","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570911}
+{"type":"thinking","subtype":"completed","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","timestamp_ms":1790269570912}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"**Built-in tools**\n- Shell\n- Grep\n- StrReplace\n- Write\n- Read\n- Glob\n- GetDynamicTools\n- CallDynamicTool\n\n**Dynamic / MCP tools**\n- `campus-events`: get_events_in_range\n- `cursor`: AwaitShell, CreateGoal, Delete, EditNotebook, FetchMcpResource, GenerateImage, ReadLints, SwitchMode, Task, TodoWrite, UpdateGoal, WebFetch, WebSearch"}]},"session_id":"a3b6a153-0a78-48f2-adce-705294e533c5"}
+{"type":"result","subtype":"success","duration_ms":7714,"duration_api_ms":7714,"is_error":false,"result":"**Built-in tools**\n- Shell\n- Grep\n- StrReplace\n- Write\n- Read\n- Glob\n- GetDynamicTools\n- CallDynamicTool\n\n**Dynamic / MCP tools**\n- `campus-events`: get_events_in_range\n- `cursor`: AwaitShell, CreateGoal, Delete, EditNotebook, FetchMcpResource, GenerateImage, ReadLints, SwitchMode, Task, TodoWrite, UpdateGoal, WebFetch, WebSearch","session_id":"a3b6a153-0a78-48f2-adce-705294e533c5","request_id":"47be3a32-e9ac-46fd-9deb-92df26b31e70","usage":{"inputTokens":5966,"outputTokens":319,"cacheReadTokens":3840,"cacheWriteTokens":0}}

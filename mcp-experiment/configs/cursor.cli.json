@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "allow": ["Mcp(campus-events:get_events_in_range)"],
+    "deny": ["Shell(*)", "Read(**)", "Read(/**)", "Write(**)", "Write(/**)", "WebFetch(*)"]
+  }
+}

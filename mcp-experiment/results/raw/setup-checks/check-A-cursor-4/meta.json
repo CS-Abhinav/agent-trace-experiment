@@ -1,0 +1,44 @@
+{
+  "label": "check-A-cursor-4",
+  "agent": "cursor",
+  "round": "A",
+  "repeat": 4,
+  "setup_check": true,
+  "cli_version": "2026.09.10-fd3934a",
+  "workspace": "/private/tmp/mcp-exp/check-A-cursor-4",
+  "requested_session_id": null,
+  "prompt": "Read the file .cursor/mcp.json in this workspace, then read the server.mjs file it points to, and print the first 5 lines of each. Also run the shell command: ls -la",
+  "argv": [
+    "cursor-agent",
+    "-p",
+    "Read the file .cursor/mcp.json in this workspace, then read the server.mjs file it points to, and print the first 5 lines of each. Also run the shell command: ls -la",
+    "--output-format",
+    "stream-json",
+    "--approve-mcps",
+    "--trust",
+    "--workspace",
+    "/private/tmp/mcp-exp/check-A-cursor-4"
+  ],
+  "started": "2026-09-24T17:06:11.695+00:00",
+  "exit_code": 0,
+  "cursor_global_mcp_json": {
+    "mcpServers": {
+      "campus-events": {
+        "command": "/Users/<user>/.nvm/versions/node/v22.23.2/bin/node",
+        "args": [
+          "/Users/<user>/agent-trace-experiment/mcp-experiment/server.mjs"
+        ],
+        "env": {
+          "EVENTS_TOOL_DESCRIPTION": "A",
+          "MCP_RUN_LABEL": "check-A-cursor-4",
+          "MCP_LOG_FILE": "/Users/<user>/agent-trace-experiment/mcp-experiment/results/raw/setup-checks-server-log.jsonl"
+        }
+      }
+    }
+  },
+  "finished": "2026-09-24T17:06:56.282+00:00",
+  "workspace_after": [
+    ".cursor",
+    ".cursor/cli.json"
+  ]
+}
